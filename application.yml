@@ -1,0 +1,14 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          my-client:
+            client-id: your-client-id
+            client-secret: your-client-secret
+            scope: read
+            authorization-grant-type: client_credentials
+            token-uri: https://example.com/oauth/token
+        provider:
+          my-provider:
+            token-uri: https://example.com/oauth/token
